@@ -1,3 +1,7 @@
 <h2 id="title">Welcome to Ember</h2>
 
-{{outlet}}
+<div>
+  Comments: {{this.model.comments.length}}
+  {{log this.model.comments}}
+</div>
+<Changer @post={{this.model}} />
